@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "iyCoO1zYoQgzFc+TPRwwlMcLl31fcO0uQfchKErWkes=",
+  "Source": "StorageAccounts",
+  "BasePath": "_content/StorageAccounts",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
