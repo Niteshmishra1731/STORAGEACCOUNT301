@@ -121,7 +121,7 @@ namespace StorageAccounts.Repsitory
         {
             try
             {
-                string path = "" + blobName;
+                string path = @"C:\Users\Nitesh mishra\STORAGEACCOUNT\StorageAccounts\Downloads\" + blobName;
                 BlobContainerClient container = new BlobContainerClient(connectionstring, blobName);
                 BlobClient client = container.GetBlobClient(file);
                 await client.DownloadToAsync(path);
