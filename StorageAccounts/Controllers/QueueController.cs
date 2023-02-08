@@ -34,7 +34,7 @@ public class QueueController : ControllerBase
         await Repsitory.Queue.UpdateMessage(queueName, msg);
         return null;
     }
-    [HttpPut("DequeueMessage")]
+    [HttpDelete("DequeueMessage")]
     public async Task<string> DequeueMessage(string queueName)
     {
         await Repsitory.Queue.DequeueMessage(queueName);

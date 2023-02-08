@@ -22,9 +22,9 @@ public class TableStorageController : ControllerBase
         return data;
     }
     [HttpGet("GetTableData")]
-    public async Task<Details> GetTableData(string tableName, string department, string rowKey)
+    public async Task<Details> GetTableData(string tableName, string partitionKey, string rowKey)
     {
-        var data = await TableStorage.GetTableData(tableName, department, rowKey);
+        var data = await TableStorage.GetTableData(tableName, partitionKey, rowKey);
         return data;
     }
     [HttpGet("GetTable")]
@@ -34,16 +34,16 @@ public class TableStorageController : ControllerBase
         return data;
     }
     [HttpDelete("DeleteTableData")]
-    public async Task DeleteTableData(string tableName, string department, string rowKey)
+    public async Task DeleteTableData(string tableName, string partitionKey, string rowKey)
     {
-        await Repsitory.TableStorage.DeleteTableData(tableName, department, rowKey);
+        await Repsitory.TableStorage.DeleteTableData(tableName, partitionKey, rowKey);
         return;
     }
-    //[HttpDelete("DeleteTable")]
-    //public async Task DeleteTable(string tableName)
-    //{
-    //    await TableStorage.DeleteTable(tableName);
-    //}
+    [HttpDelete("DeleteTable")]
+    public async Task DeleteTable(string tableName)
+    {
+        await TableStorage.DeleteTable(tableName);
     }
+}
 
 

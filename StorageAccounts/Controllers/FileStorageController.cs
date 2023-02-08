@@ -18,7 +18,7 @@ public class FileStorageController : Controller
     [HttpPut("UploadFile")]
     public async Task UploadFile(IFormFile file,string directoryName,string fileShareName)
     {
-        await FileStorage.CreateDirectory(directoryName, fileShareName);
+        await FileStorage.UploadFile(file,directoryName, fileShareName);
     }
     [HttpDelete("DeleteDirectory")]
     public async Task DeleteDirectory(string directoryName,string fileShareName)
@@ -29,6 +29,11 @@ public class FileStorageController : Controller
     public async Task DeleteFile(string directoryName,string fileShareName,string fileName)
     {
         await FileStorage.DeleteFile(directoryName, fileShareName, fileName);
+    }
+    [HttpDelete("DeleteFolder")]
+    public async Task DeleteFolder(string fileName)
+    {
+        await FileStorage.DeleteFolder(fileName);
     }
     [HttpGet("GetAllFiles")]
     public async Task<List<string>>GetAllFiles(string directoryName,string fileShareName)

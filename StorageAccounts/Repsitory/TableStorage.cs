@@ -33,12 +33,20 @@ namespace StorageAccounts.Repsitory
             var client = data.GetTableClient(tableName);
             return client;
         }
-        public static async Task DeleteTableData(string tableName,string department,string id)
+        public static async Task DeleteTableData(string tableName,string partitionKey,string rowKey)
         {
             var data = new TableServiceClient(connectionstring);
             var client=data.GetTableClient(tableName);
-            await client.DeleteEntityAsync(department, id);
+            await client.DeleteEntityAsync(partitionKey, rowKey);
             return; 
+
         }
+        public static async Task DeleteTable(string tableName)
+        {
+            var data = new TableServiceClient(connectionstring);
+            await data.DeleteTableAsync(tableName);
+
+        }
+
     }
 }

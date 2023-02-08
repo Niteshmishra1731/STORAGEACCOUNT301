@@ -65,6 +65,12 @@ namespace StorageAccounts.Repsitory
             var file=dir.GetFileClient(fileName);
             await file.DeleteAsync();
         }
+        public static async Task DeleteFolder(string fileName)
+        {
+            shareServiceClient = new ShareServiceClient(connectionstring);
+            var serviceClient=shareServiceClient.GetShareClient(fileName);
+            await serviceClient.DeleteIfExistsAsync();
+        }
         public static async Task<List<string>> GetAllFiles(string directoryName,string fileShareName)
         {
             shareServiceClient = new ShareServiceClient(connectionstring);
