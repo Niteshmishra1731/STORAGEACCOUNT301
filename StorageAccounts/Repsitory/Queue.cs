@@ -9,7 +9,7 @@ namespace StorageAccounts.Repsitory
 {
     public class Queue
     {
-        static string connectionstring = "DefaultEndpointsProtocol=https;AccountName=storageaccount1731;AccountKey=Vwr33PdbF7wmQIWb4lhDcu9YYXwLRjtsMkETPyqhgaqyUfWNlNBf1hmImh2lNhvcpqo7ez2aaYMc+AStHPjhbg==;EndpointSuffix=core.windows.net";
+        static string connectionstring = "DefaultEndpointsProtocol=https;AccountName=storageaccount1731;AccountKey=VrKf0TbQUxVUJ5LAKrvg3tjYxzkr8kLft5Q/zlcykAHiaj3wOUArxjd11NlJS4Zj/JgfWz9HVSVf+AStNFyTFQ==;EndpointSuffix=core.windows.net";
         public static async Task<bool> CreateQueue(string queueName)
         {
             if (string.IsNullOrEmpty(queueName))

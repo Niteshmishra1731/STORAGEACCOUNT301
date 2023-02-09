@@ -7,7 +7,7 @@ namespace StorageAccounts.Repsitory
 {
     public class FileStorage
     {
-        public static string connectionstring = "DefaultEndpointsProtocol=https;AccountName=storageaccount1731;AccountKey=Vwr33PdbF7wmQIWb4lhDcu9YYXwLRjtsMkETPyqhgaqyUfWNlNBf1hmImh2lNhvcpqo7ez2aaYMc+AStHPjhbg==;EndpointSuffix=core.windows.net";
+        public static string connectionstring = "DefaultEndpointsProtocol=https;AccountName=storageaccount1731;AccountKey=VrKf0TbQUxVUJ5LAKrvg3tjYxzkr8kLft5Q/zlcykAHiaj3wOUArxjd11NlJS4Zj/JgfWz9HVSVf+AStNFyTFQ==;EndpointSuffix=core.windows.net";
         static ShareServiceClient shareServiceClient = null;
         public static async Task CreateFile(string fileName)
         {
