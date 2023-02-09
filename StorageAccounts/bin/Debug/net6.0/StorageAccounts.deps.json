@@ -14,6 +14,7 @@
           "Azure.Storage.Queues": "12.12.0",
           "Microsoft.Azure.Management.Fluent": "1.38.1",
           "Microsoft.Azure.WebJobs.Extensions.Storage": "5.0.1",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.0",
           "Newtonsoft.Json.Bson": "1.0.3-beta1",
           "NuGet.Protocol": "6.4.0",
           "Swashbuckle.AspNetCore": "6.5.0",
@@ -893,6 +894,7 @@
           }
         }
       },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {},
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -2410,6 +2412,13 @@
       "sha512": "sha512-lzTUW5rm7aHp5cEb6VkhXcBlh7PyKTBoPY/zVlsy+YBOhweyivAI76wa1RDfUy7yqkaDvhgqC+bgqhh1+t3tdA==",
       "path": "microsoft.rest.clientruntime.azure.authentication/2.4.1",
       "hashPath": "microsoft.rest.clientruntime.azure.authentication.2.4.1.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gfDtAL1WhkjbRdbZlt/ZeQYCbgRpNCZCGj+yeqHObsNFRDHjq8qZJOX9AyTxJpSRYMi9SJk7JDyAbbVYRgEhAA==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.0",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
