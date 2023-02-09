@@ -10,10 +10,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["StorageAccounts/StorageAccounts.csproj", "StorageAccounts/"]
-RUN dotnet restore "StorageAccounts/StorageAccounts.csproj"
+COPY ["StorageAccounts.csproj", "."]
+RUN dotnet restore "./StorageAccounts.csproj"
 COPY . .
-WORKDIR "/src/StorageAccounts"
+WORKDIR "/src/."
 RUN dotnet build "StorageAccounts.csproj" -c Release -o /app/build
 
 FROM build AS publish
