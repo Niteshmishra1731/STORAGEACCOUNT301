@@ -5,7 +5,7 @@ namespace StorageAccounts.Repsitory
 {
     public class TableStorage
     {
-        static string connectionstring = "DefaultEndpointsProtocol=https;AccountName=strorageaccountiot;AccountKey=Ld15S4Z6nyfOUePlDKpaFs/uCaJFnSt7ZvfoziUKL9wKxVos2EC+xoGhHLIvbDzoHk9JnWQQYx4l+AStmBucaQ==;EndpointSuffix=core.windows.net";
+        static string connectionstring = "DefaultEndpointsProtocol=https;AccountName=strorageaccounts;AccountKey=kpwAJD8GH2a8v8e+DHmhqCEZTzKwjnob/DnoxT42gX7chbnMciaHDUfeWrgNYVqXlKdu1pKOqDBF+AStUb/xkQ==;EndpointSuffix=core.windows.net";
         public static async Task AddTable(string tableName)
         {
             var data = new TableServiceClient(connectionstring);
